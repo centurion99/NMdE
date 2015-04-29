@@ -15,10 +15,35 @@
 
 function aufgabe1_4
 K=10^8;
+res=pi^2/6;
+erg=0;
+
 err_forward=0;
 err_backward=0;
 
-% insert code here
+for k=1:K
+    ergp=erg;
+    erg=single(erg+1/k^2);
+    if ergp==erg
+        display(k);
+        err_forward=res-erg;
+        break
+    end
+    
+end
+
+erg=0;
+
+for k=K:-1:1
+    ergp=erg;
+    erg=single(erg+1/k^2);
+    if ergp==erg
+        display(k);
+        err_backward=res-erg;
+        break
+    end
+    
+end
 
 display(err_forward)
 display(err_backward)

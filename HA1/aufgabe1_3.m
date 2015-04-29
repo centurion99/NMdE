@@ -19,9 +19,28 @@ err_double=zeros(200,1);
 for i=10:200
     n=10^(i/10);
     
-    % insert code
+    %e=0;
+    %e=double(e);
+    %es=0;
+    %es=single(es);
+    e=(1+1/n)^n;
+    %es=(1+1/n)^n;
     
+    err_double(i)=e;
+    %err_single(i)=exp(1)-es;
 end
+
+plot(err_double);
+
+title('Rundungsfehler')
+xlabel('Iterationen')
+ylabel('Rundungsfehler')
+
+%hold all;
+
+%plot(err_single);
+
+   
 
 % insert code
 

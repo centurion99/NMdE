@@ -18,37 +18,36 @@ function aufgabe1_1
 N=60;
 x=100;
 
-result=0;
-
-% insert code here
+result=rundungsfehler(x,N);
 
 display(result)
-display('Erläuterung:')
+display('Erl�uterung:')
 
 
 results=zeros(N,1);
 
 for n=1:N
-    % insert code here
+    results(n)=rundungsfehler(x,n);
 end
 
 plot(results);
 % axis([xmin xmax ymin ymax])
-title('Überschrift')
-xlabel('X-Achsenbeschriftung')
-ylabel('Y-Achsenbeschriftung')
+title('Rundungsfehler')
+xlabel('Iterationen')
+ylabel('Rundungsfehler')
 
 end
 
 
 function f = rundungsfehler(x,n)
+wurzel=x;
 for i=1:n
-    % insert code here
+    wurzel=sqrt(wurzel);
+end;
+quadrat=wurzel;
+for i=1:n
+    quadrat=quadrat^2;
 end;
 
-for i=1:n
-    % insert code here
-end;
-
-% insert code here
+f=x-quadrat;
 end
