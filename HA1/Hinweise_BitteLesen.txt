@@ -1,0 +1,15 @@
+Hinweise zur Lösung der Matlab-Aufgaben:
+ 
+- Bitte arbeiten Sie nur in den vorgegebenen m-files
+- Bitte fügen Sie Ihre Antworten zu den in der Angabe gestellten Fragen
+  ebenfalls in die m-files ein. Sie finden dafür bereits einen vorgegeben
+  Platzhalter vor (Bitte keine extra Dateien erstellen!)
+- Wenn Sie ihre Hausaufgabe abgeben möchten, laden Sie ihre Dateien 
+  (am Besten als zip-file) auf moodle hoch
+- Sie können die Aufgaben so oft erneut hochladen wie Sie möchten
+- Den Abgabetermin können Sie auf dem jeweiligen Arbeitsblatt finden, sowie
+  als Abgabetermin in der moodle-Übersicht
+- Bitte keine Dateien per Mail!
+ 
+Vielen Dank und viel Erfolg bei der ersten Hausaufgabe!
+
