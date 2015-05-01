@@ -28,8 +28,7 @@ for k=1:K
         display(k);
         err_forward=res-erg;
         break
-    end
-    
+    end    
 end
 
 erg=0;
@@ -41,8 +40,7 @@ for k=K:-1:1
         display(k);
         err_backward=res-erg;
         break
-    end
-    
+    end    
 end
 
 display(err_forward)
