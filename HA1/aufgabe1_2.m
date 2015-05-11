@@ -28,17 +28,18 @@ display(eps)
 end
 
 function epsilon = genauigkeit(start,precision)
-epsilon = start;
+
 if precision == 1
-    epsilon=single(epsilon);
-    while (epsilon+1) > 1
-        epsilon=single(epsilon/2);
+   epsilon=single(start); 
+    while single(epsilon+1)>single(1)
+        epsilon=epsilon/single(2);
     end
 end
 if precision == 2
-    epsilon=double(epsilon);
-    while (epsilon+1) > 1
+    epsilon=double(start);
+    while epsilon+1>1
         epsilon=epsilon/2;
     end
-end
+end  
+epsilon=epsilon*2;
 end

@@ -49,5 +49,5 @@ for i=1:n
     quadrat=quadrat^2;
 end;
 
-f=x-quadrat;
+f=quadrat;
 end
